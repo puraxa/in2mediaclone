@@ -1,0 +1,84 @@
+h3 {
+    padding-bottom: 40px;
+}
+p {
+    margin: 0;
+    margin-bottom: 2em;
+}
+.gallery {
+    width: 95%;
+    margin-left: 2.5%;
+}
+.up-down-container {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.up-down {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    transition: top 1s;
+}
+.up-down:hover {
+    top: -75px;
+}
+.up-down div{
+    width: 100%;
+    height: 75px;
+}
+.bg-white {
+    background-color: white;
+}
+.bg-black {
+    background-color: black;
+    color:white;
+}
+.bg-blue {
+    background-color: blue;
+}
+.animation-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+.animation-container-left {
+    margin-right: 0;
+}
+.animation-container-right {
+    margin-left: 0;
+}
+.slide-up {
+    height: 150%;
+    position: relative;
+    top: 0;
+    transition: top 1s;
+}
+.slide-up:hover {
+    top: -50px;
+}
+.zoom-in {
+    width: 150%;
+    transition: width 1s;
+}
+.zoom-in:hover {
+    width: 180%;
+}
+@media screen and (min-width: 780px){
+    .gallery {
+        width: 100%;
+        margin:0;
+    }
+    .animation-container{
+        width: 49%;
+    }
+    .animation-container-left {
+        margin-right: 1%;
+    }
+    .animation-container-right {
+        margin-left: 1%;
+    }
+}
