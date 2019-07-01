@@ -5,6 +5,9 @@ nav a {
     color: white;
     font-weight: bold;
 }
+h6 {
+    padding-top: 100px;
+}
 .float-right{
     float: right;
 }
@@ -17,10 +20,19 @@ p {
     font-size: 48px;
 }
 nav {
+    display: none;
     padding:20px 20px;
 }
 .center {
-    width: 768px;
+    width: 100%;
     margin: auto;
     text-align: center;
+}
+@media screen and (min-width: 780px){
+    .center {
+        width:768px;
+    }
+    nav {
+        display: inline;
+    }
 }
