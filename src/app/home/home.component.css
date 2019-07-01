@@ -6,6 +6,7 @@ p {
     margin-bottom: 2em;
 }
 .gallery {
+    position: relative;
     width: 95%;
     margin-left: 2.5%;
 }
@@ -119,6 +120,9 @@ p {
     padding: 0;
     display: inline-block;
 }
+.arrow {
+    display: none;
+}
 @media screen and (min-width: 780px){
     .gallery {
         width: 100%;
@@ -148,5 +152,15 @@ p {
     }
     .phone-animation {
         width: 50%;
+    }
+    .arrow {
+        display: block;
+        position: absolute;
+        top:50%;width:75px;
+        height: 50px; 
+        background-color: white;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
     }
 }
